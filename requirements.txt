@@ -1,0 +1,9 @@
+dask[dataframe]
+pandas
+numpy
+fastapi
+uvicorn
+pydantic
+huggingface_hub
+pyarrow
+httpx

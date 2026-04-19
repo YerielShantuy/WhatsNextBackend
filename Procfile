@@ -1,0 +1,1 @@
+web: python filter.py && python main.py
