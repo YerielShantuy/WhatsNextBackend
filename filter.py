@@ -3,7 +3,9 @@ import pandas as pd
 import numpy as np
 import os
 
-login(token=os.environ.get("HF_TOKEN"))
+hf_token = os.environ.get("HF_TOKEN", "")
+if hf_token:
+    login(token=hf_token)
 
 # ─── Find all shards ───
 api = HfApi()
@@ -12,6 +14,7 @@ cats_path = hf_hub_download(
     repo_id="foursquare/fsq-os-places",
     filename="release/dt=2026-04-14/categories/parquet/categories_000000.parquet",
     repo_type="dataset",
+    token=HF_TOKEN
 )
 
 # ─── Build allowed category IDs ───

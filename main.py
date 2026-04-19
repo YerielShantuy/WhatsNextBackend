@@ -82,7 +82,7 @@ NIGHTLIFE_THRESHOLD = EVENING_START  # 17:00+
 # Get your free key at https://console.groq.com (no credit card needed)
 # Then:  export GROQ_API_KEY=gsk_abc123...
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MODEL = "llama-3.3-70b-versatile"
 

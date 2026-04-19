@@ -1,0 +1,5 @@
+[build]
+buildCommand = "pip install -r requirements.txt && python filter.py"
+
+[deploy]
+startCommand = "python main.py"

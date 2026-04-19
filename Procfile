@@ -1,1 +1,1 @@
-web: python filter.py && python main.py
+web: python main.py
